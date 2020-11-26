@@ -16,10 +16,13 @@ const results = await client.query({
 });
 ```
 
+Or pass a request object to be evaluated based on logic
+
 ```js
 const results = await client.query({
     req: { something: { special: 'e90829ef-1da4-448d-3e44-b3d275702b86' } },
-    query: MyGraphQLQuery
+    query: MyGraphQLQuery,
+    variables
 });
 ```
 
